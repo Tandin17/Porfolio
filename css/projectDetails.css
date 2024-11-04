@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.persona {
+    margin-bottom: 20px;
+}
+
+.designs-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.design {
+    flex: 1 1 calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.design:last-child {
+    margin-right: 0;
+    /* Remove right margin for the last item */
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        /* Stack navigation items on smaller screens */
+        margin-bottom: 5px;
+        text-align: center;
+        /* Center align on mobile */
+    }
+
+    .design {
+        flex-basis: 100%;
+        /* Full width on smaller screens */
+        margin-right: 0;
+        /* Remove right margin */
+        margin-bottom: 20px;
+        /* Add space between designs */
+    }
+}
